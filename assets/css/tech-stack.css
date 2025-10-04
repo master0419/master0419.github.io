@@ -317,54 +317,36 @@
   }
 }
 
-/* Swimming Fish Animation */
+/* Swimming Fish Animation - 5 Different Scenarios */
 .swimming-fish {
   position: absolute;
-  width: 160px;
   height: auto;
   pointer-events: none;
   z-index: 5;
-  opacity: 0.7;
   filter: drop-shadow(0 2px 8px rgba(100, 200, 255, 0.3));
 }
 
-/* Fish swimming from right to left (original direction) */
-.fish-rtl {
-  animation: swimRightToLeft 25s linear infinite;
+/* Scenario 1: Right to Left, Medium speed, Middle path */
+.fish-scenario-1 {
+  width: 150px;
+  opacity: 0.7;
+  animation: swim-scenario-1 28s linear infinite;
+  animation-delay: -8s;
 }
 
-/* Fish swimming from left to right (flipped) */
-.fish-ltr {
-  animation: swimLeftToRight 30s linear infinite;
-  transform: scaleX(-1);
-}
-
-/* Fish with varied speed */
-.fish-slow {
-  animation-duration: 35s;
-}
-
-.fish-medium {
-  animation-duration: 28s;
-}
-
-.fish-fast {
-  animation-duration: 22s;
-}
-
-@keyframes swimRightToLeft {
+@keyframes swim-scenario-1 {
   0% {
     left: 110%;
-    top: 20%;
+    top: 25%;
   }
   25% {
-    top: 40%;
+    top: 35%;
   }
   50% {
     top: 30%;
   }
   75% {
-    top: 50%;
+    top: 40%;
   }
   100% {
     left: -25%;
@@ -372,40 +354,259 @@
   }
 }
 
-@keyframes swimLeftToRight {
+/* Scenario 2: Left to Right (Flipped), Slow speed, Lower path */
+.fish-scenario-2 {
+  width: 200px;
+  opacity: 0.65;
+  animation: swim-scenario-2 38s linear infinite;
+  animation-delay: -15s;
+  transform: scaleX(-1);
+}
+
+@keyframes swim-scenario-2 {
   0% {
     left: -25%;
+    top: 55%;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
     top: 60%;
+  }
+  75% {
+    top: 52%;
+  }
+  100% {
+    left: 110%;
+    top: 58%;
+  }
+}
+
+/* Scenario 3: Right to Left, Fast speed, Upper path */
+.fish-scenario-3 {
+  width: 170px;
+  opacity: 0.75;
+  animation: swim-scenario-3 22s linear infinite;
+  animation-delay: -5s;
+}
+
+@keyframes swim-scenario-3 {
+  0% {
+    left: 110%;
+    top: 15%;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    top: 20%;
+  }
+  75% {
+    top: 28%;
+  }
+  100% {
+    left: -25%;
+    top: 22%;
+  }
+}
+
+/* Scenario 4: Left to Right (Flipped), Medium-fast speed, Mid-low path */
+.fish-scenario-4 {
+  width: 180px;
+  opacity: 0.68;
+  animation: swim-scenario-4 25s linear infinite;
+  animation-delay: -20s;
+  transform: scaleX(-1);
+}
+
+@keyframes swim-scenario-4 {
+  0% {
+    left: -25%;
+    top: 42%;
+  }
+  25% {
+    top: 48%;
+  }
+  50% {
+    top: 45%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    left: 110%;
+    top: 46%;
+  }
+}
+
+/* Scenario 5: Right to Left, Very slow, Deep path */
+.fish-scenario-5 {
+  width: 190px;
+  opacity: 0.6;
+  animation: swim-scenario-5 42s linear infinite;
+  animation-delay: -30s;
+}
+
+@keyframes swim-scenario-5 {
+  0% {
+    left: 110%;
+    top: 65%;
+  }
+  25% {
+    top: 70%;
+  }
+  50% {
+    top: 68%;
+  }
+  75% {
+    top: 72%;
+  }
+  100% {
+    left: -25%;
+    top: 70%;
+  }
+}
+
+/* Scenario 6: Left to Right (Flipped), Fast speed, Upper-mid path */
+.fish-scenario-6 {
+  width: 165px;
+  opacity: 0.72;
+  animation: swim-scenario-6 24s linear infinite;
+  animation-delay: -10s;
+  transform: scaleX(-1);
+}
+
+@keyframes swim-scenario-6 {
+  0% {
+    left: -25%;
+    top: 32%;
+  }
+  25% {
+    top: 28%;
+  }
+  50% {
+    top: 35%;
+  }
+  75% {
+    top: 30%;
+  }
+  100% {
+    left: 110%;
+    top: 33%;
+  }
+}
+
+/* Scenario 7: Right to Left, Medium-slow speed, Wavy middle path */
+.fish-scenario-7 {
+  width: 175px;
+  opacity: 0.68;
+  animation: swim-scenario-7 32s linear infinite;
+  animation-delay: -18s;
+}
+
+@keyframes swim-scenario-7 {
+  0% {
+    left: 110%;
+    top: 38%;
   }
   25% {
     top: 45%;
   }
   50% {
-    top: 55%;
+    top: 40%;
   }
   75% {
-    top: 40%;
+    top: 48%;
+  }
+  100% {
+    left: -25%;
+    top: 43%;
+  }
+}
+
+/* Scenario 8: Left to Right (Flipped), Very fast speed, Top path */
+.fish-scenario-8 {
+  width: 155px;
+  opacity: 0.78;
+  animation: swim-scenario-8 20s linear infinite;
+  animation-delay: -7s;
+  transform: scaleX(-1);
+}
+
+@keyframes swim-scenario-8 {
+  0% {
+    left: -25%;
+    top: 12%;
+  }
+  25% {
+    top: 18%;
+  }
+  50% {
+    top: 15%;
+  }
+  75% {
+    top: 20%;
   }
   100% {
     left: 110%;
-    top: 50%;
+    top: 16%;
   }
 }
 
-/* Position variations for 3 fish - start at random positions in animation */
-.fish-1 {
-  width: 145px;
-  animation-delay: -12s;
+/* Scenario 9: Right to Left, Slow speed, Lower-middle path */
+.fish-scenario-9 {
+  width: 185px;
+  opacity: 0.64;
+  animation: swim-scenario-9 36s linear infinite;
+  animation-delay: -25s;
 }
 
-.fish-2 {
-  width: 220px;
-  opacity: 0.6;
-  animation-delay: -6s;
+@keyframes swim-scenario-9 {
+  0% {
+    left: 110%;
+    top: 52%;
+  }
+  25% {
+    top: 58%;
+  }
+  50% {
+    top: 55%;
+  }
+  75% {
+    top: 60%;
+  }
+  100% {
+    left: -25%;
+    top: 56%;
+  }
 }
 
-.fish-3 {
-  width: 180px;
-  opacity: 0.65;
-  animation-delay: -18s;
+/* Scenario 10: Left to Right (Flipped), Medium speed, Deep-low path */
+.fish-scenario-10 {
+  width: 195px;
+  opacity: 0.62;
+  animation: swim-scenario-10 30s linear infinite;
+  animation-delay: -22s;
+  transform: scaleX(-1);
+}
+
+@keyframes swim-scenario-10 {
+  0% {
+    left: -25%;
+    top: 62%;
+  }
+  25% {
+    top: 67%;
+  }
+  50% {
+    top: 64%;
+  }
+  75% {
+    top: 69%;
+  }
+  100% {
+    left: 110%;
+    top: 66%;
+  }
 }
