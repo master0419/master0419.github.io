@@ -5,88 +5,188 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="author" content="{{ site.author }}">
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-    }
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: white;
-      min-height: 100vh;
-      box-shadow: 0 0 50px rgba(0,0,0,0.1);
-    }
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/hero.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/tech-stack.css' | relative_url }}">
 
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
 
-    header h1 {
-      font-size: 2em;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
-    }
-
-    footer p {
-      opacity: 0.8;
-    }
-
-    a {
-      color: #3498db;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #2980b9;
-    }
-  </style>
+  <!-- Preload important resources -->
+  <link rel="preload" href="{{ '/assets/css/base.css' | relative_url }}" as="style">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
-    </header>
-
-    <main>
-      {{ content }}
-    </main>
-
-    <footer>
-      <p>&copy; 2025 {{ site.author }}. All rights reserved.</p>
-      <p style="margin-top: 10px; font-size: 0.9em;">Built with Jekyll & GitHub Pages</p>
-    </footer>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
   </div>
+
+  <!-- Header -->
+  {% include header.html %}
+
+  <!-- Underwater Overlay -->
+  <div class="underwater-overlay" id="underwaterOverlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- Depth Indicator -->
+  <div class="depth-indicator" id="depthIndicator">
+    <div class="depth-dot" data-target="#home"></div>
+    <div class="depth-dot" data-target="#about"></div>
+    <div class="depth-dot" data-target="#tech-stack"></div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script>
+    // Page Loader
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('pageLoader');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 500);
+    });
+
+    // Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle) {
+      navToggle.addEventListener('click', function() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    }
+
+    // Close mobile menu on link click
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Underwater overlay effect (increases as you scroll)
+    const underwaterOverlay = document.getElementById('underwaterOverlay');
+    window.addEventListener('scroll', function() {
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
+      underwaterOverlay.style.opacity = Math.min(scrollPercentage * 0.5, 0.3);
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Depth indicator
+    const depthDots = document.querySelectorAll('.depth-dot');
+    const sections = document.querySelectorAll('section[id]');
+
+    window.addEventListener('scroll', function() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      depthDots.forEach(dot => {
+        dot.classList.remove('active');
+        const target = dot.getAttribute('data-target');
+        if (target === '#' + current) {
+          dot.classList.add('active');
+        }
+      });
+    });
+
+    depthDots.forEach(dot => {
+      dot.addEventListener('click', function() {
+        const target = this.getAttribute('data-target');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Scroll indicator
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      scrollIndicator.addEventListener('click', function() {
+        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+      });
+    }
+  </script>
 </body>
 </html>
