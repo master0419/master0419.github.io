@@ -31,8 +31,8 @@
 <div style="...">👩‍💻</div>
 
 <!-- 변경 후 (이미지 사용) -->
-<img src="{{ '/assets/images/profile.jpg' | relative_url }}" 
-     alt="유지수 프로필" 
+<img src="{{ '/assets/images/profile.jpg' | relative_url }}"
+     alt="유지수 프로필"
      class="hero-profile-image">
 ```
 

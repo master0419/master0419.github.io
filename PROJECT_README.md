@@ -37,7 +37,7 @@ master0419.github.io/
 ### 1️⃣ Hero Component (첫 번째 섹션)
 - **ID**: `#home`
 - **높이**: 100vh (전체 화면)
-- **특징**: 
+- **특징**:
   - 큰 제목으로 이름 강조
   - AI/Data Scientist 소개
   - 프로필 이미지 영역
@@ -136,8 +136,8 @@ github_username: master0419
 2. `index.md`의 Hero 섹션에서 이모지를 이미지로 교체:
 
 ```html
-<img src="{{ '/assets/images/profile.jpg' | relative_url }}" 
-     alt="유지수 프로필" 
+<img src="{{ '/assets/images/profile.jpg' | relative_url }}"
+     alt="유지수 프로필"
      class="hero-profile-image">
 ```
 

@@ -6,10 +6,10 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
-  
+
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/hero.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/tech-stack.css' | relative_url }}">
-  
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
-  
+
   <!-- Preload important resources -->
   <link rel="preload" href="{{ '/assets/css/base.css' | relative_url }}" as="style">
 </head>
@@ -73,7 +73,7 @@
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    
+
     if (navToggle) {
       navToggle.addEventListener('click', function() {
         navToggle.classList.toggle('active');
@@ -124,7 +124,7 @@
     // Depth indicator
     const depthDots = document.querySelectorAll('.depth-dot');
     const sections = document.querySelectorAll('section[id]');
-    
+
     window.addEventListener('scroll', function() {
       let current = '';
       sections.forEach(section => {
