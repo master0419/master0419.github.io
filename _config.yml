@@ -1,0 +1,19 @@
+# Site settings
+title: 유지수 | Python Developer
+description: Python Developer passionate about software development and AI
+author: 유지수
+email: jsyoo@example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Social links
+github_username: master0419
+linkedin_username: jsyoo-linkedin
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
