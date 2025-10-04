@@ -6,7 +6,7 @@ email: jsyoo@example.com
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima  # 커스텀 CSS 사용으로 비활성화
 
 # Social links
 github_username: master0419

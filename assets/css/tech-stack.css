@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background: linear-gradient(180deg, #0d3454 0%, #0f466b 50%, #115782 100%);
+  background: linear-gradient(180deg, #020910 0%, #01070c 33%, #010508 66%, #000304 100%);
   overflow: hidden;
 }
 
@@ -18,9 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(100, 200, 255, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 85% 80%, rgba(74, 159, 216, 0.08) 0%, transparent 40%);
+  background: transparent;
   pointer-events: none;
 }
 
@@ -66,7 +64,7 @@
   transform: translateX(-50%);
   width: 150px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #64c8ff, transparent);
+  background: #64c8ff;
   box-shadow: 0 0 15px rgba(100, 200, 255, 0.6);
 }
 
@@ -101,7 +99,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(100, 200, 255, 0.1), transparent);
+  background: rgba(100, 200, 255, 0.05);
   transition: left 0.5s ease;
 }
 
