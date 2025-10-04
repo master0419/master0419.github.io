@@ -316,3 +316,96 @@
     gap: 1rem;
   }
 }
+
+/* Swimming Fish Animation */
+.swimming-fish {
+  position: absolute;
+  width: 160px;
+  height: auto;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.7;
+  filter: drop-shadow(0 2px 8px rgba(100, 200, 255, 0.3));
+}
+
+/* Fish swimming from right to left (original direction) */
+.fish-rtl {
+  animation: swimRightToLeft 25s linear infinite;
+}
+
+/* Fish swimming from left to right (flipped) */
+.fish-ltr {
+  animation: swimLeftToRight 30s linear infinite;
+  transform: scaleX(-1);
+}
+
+/* Fish with varied speed */
+.fish-slow {
+  animation-duration: 35s;
+}
+
+.fish-medium {
+  animation-duration: 28s;
+}
+
+.fish-fast {
+  animation-duration: 22s;
+}
+
+@keyframes swimRightToLeft {
+  0% {
+    left: 110%;
+    top: 20%;
+  }
+  25% {
+    top: 40%;
+  }
+  50% {
+    top: 30%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    left: -25%;
+    top: 35%;
+  }
+}
+
+@keyframes swimLeftToRight {
+  0% {
+    left: -25%;
+    top: 60%;
+  }
+  25% {
+    top: 45%;
+  }
+  50% {
+    top: 55%;
+  }
+  75% {
+    top: 40%;
+  }
+  100% {
+    left: 110%;
+    top: 50%;
+  }
+}
+
+/* Position variations for 3 fish - start at random positions in animation */
+.fish-1 {
+  width: 145px;
+  animation-delay: -12s;
+}
+
+.fish-2 {
+  width: 220px;
+  opacity: 0.6;
+  animation-delay: -6s;
+}
+
+.fish-3 {
+  width: 180px;
+  opacity: 0.65;
+  animation-delay: -18s;
+}

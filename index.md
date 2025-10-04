@@ -25,10 +25,8 @@ title: Home
     </p>
 
     <div class="hero-profile-container">
-      <!-- Profile image placeholder - 추후 이미지 추가 -->
-      <div style="width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, rgba(100, 200, 255, 0.3), rgba(74, 159, 216, 0.3)); border: 4px solid rgba(100, 200, 255, 0.5); box-shadow: 0 0 40px rgba(100, 200, 255, 0.4), 0 10px 30px rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; font-size: 4rem; animation: float 3s ease-in-out infinite;">
-        👩‍💻
-      </div>
+      <!-- Profile Image -->
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="유지수 프로필 사진" class="hero-profile-image">
 
       <a href="#about" class="hero-cta">더 알아보기</a>
     </div>
@@ -68,11 +66,15 @@ title: Home
         </h3>
         <div class="about-section-text">
           <p>
-            안녕하세요! 데이터 과학과 인공지능에 열정을 가진 유지수입니다.
+            안녕하세요!!
           </p>
           <p>
             복잡한 데이터 속에서 의미 있는 패턴을 찾아내고,
             AI 기술을 활용하여 실질적인 가치를 창출하는 것을 좋아합니다.
+          </p>
+          <p>
+            끊임없이 배우고 성장하는 것을 즐기며,
+            새로운 기술과 도전을 두려워하지 않습니다.
           </p>
           <p>
             끊임없이 배우고 성장하는 것을 즐기며,
@@ -146,6 +148,11 @@ title: Home
     <div class="light-ray"></div>
     <div class="light-ray"></div>
   </div>
+
+  <!-- Swimming Fish -->
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-medium fish-1">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-ltr fish-slow fish-2">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-fast fish-3">
 
   <div class="tech-stack-container fade-in">
     <div class="tech-stack-header">
