@@ -147,6 +147,11 @@ title: Home
     <div class="light-ray"></div>
   </div>
 
+  <!-- Swimming Fish -->
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-medium fish-1">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-ltr fish-slow fish-2">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-fast fish-3">
+
   <div class="tech-stack-container fade-in">
     <div class="tech-stack-header">
       <h2 class="tech-stack-title">Tech Stack</h2>
