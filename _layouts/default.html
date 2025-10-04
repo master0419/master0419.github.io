@@ -187,6 +187,27 @@
         window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
       });
     }
+
+    // Random Fish Selection: Select 3 out of 10 fish scenarios
+    (function() {
+      const allFish = document.querySelectorAll('.swimming-fish');
+      if (allFish.length === 0) return;
+
+      // Create array of indices [0, 1, 2, ..., 9]
+      const indices = Array.from({ length: allFish.length }, (_, i) => i);
+
+      // Shuffle array using Fisher-Yates algorithm
+      for (let i = indices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [indices[i], indices[j]] = [indices[j], indices[i]];
+      }
+
+      // Select first 3 indices and display those fish
+      const selectedIndices = indices.slice(0, 3);
+      selectedIndices.forEach(index => {
+        allFish[index].style.display = 'block';
+      });
+    })();
   </script>
 </body>
 </html>

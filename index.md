@@ -149,10 +149,17 @@ title: Home
     <div class="light-ray"></div>
   </div>
 
-  <!-- Swimming Fish -->
-  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-medium fish-1">
-  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-ltr fish-slow fish-2">
-  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-rtl fish-fast fish-3">
+  <!-- Swimming Fish - 10 Scenarios (3 will be randomly selected by JavaScript) -->
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-1" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-2" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-3" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-4" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-5" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-6" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-7" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-8" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-9" style="display: none;">
+  <img src="{{ '/assets/img/bone_fish.png' | relative_url }}" alt="Fish" class="swimming-fish fish-scenario-10" style="display: none;">
 
   <div class="tech-stack-container fade-in">
     <div class="tech-stack-header">
