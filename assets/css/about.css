@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background: linear-gradient(180deg, #051829 0%, #0a2740 50%, #0d3454 100%);
+  /* background: #051527; */
+  background: linear-gradient(180deg, #0D192F 0%, #061120 33%, #040d18 66%, #020910 100%);
   overflow: hidden;
 }
 
@@ -18,9 +19,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background:
+  /* background:
     radial-gradient(circle at 20% 30%, rgba(100, 200, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(74, 159, 216, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 80% 70%, rgba(74, 159, 216, 0.05) 0%, transparent 50%); */
   pointer-events: none;
 }
 
@@ -73,7 +74,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #64c8ff, transparent);
+  background: #64c8ff;
   box-shadow: 0 0 10px rgba(100, 200, 255, 0.5);
 }
 

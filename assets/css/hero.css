@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(180deg, #1a3a52 0%, #0d2438 50%, #051829 100%);
+  background: linear-gradient(180deg, #3a607f 0%, #2a4666 50%, #0D192F 100%);
 }
 
 .hero-component::before {
@@ -17,11 +17,27 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/ocean-surface.jpg');
+  background-image: url('../img/background.jpeg');
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.55;
   animation: wave-motion 20s ease-in-out infinite;
+}
+
+.hero-component::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg,
+    rgba(58, 96, 127, 0.15) 0%,
+    rgba(42, 70, 102, 0.25) 40%,
+    rgba(26, 54, 74, 0.4) 80%,
+    rgba(18, 38, 58, 0.5) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 @keyframes wave-motion {
@@ -172,9 +188,9 @@
   bottom: -100px;
   width: 40px;
   height: 40px;
-  background: rgba(100, 200, 255, 0.1);
+  background: rgba(140, 220, 255, 0.2);
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.7;
   animation: rise 15s infinite ease-in;
 }
 
