@@ -52,6 +52,7 @@
   max-width: 900px;
   padding: 2rem;
   animation: fadeInUp 1.5s ease-out;
+  margin-top: -8rem;
 }
 
 @keyframes fadeInUp {

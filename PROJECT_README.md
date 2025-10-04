@@ -100,7 +100,7 @@ bundle install
 title: 유지수 | Python Developer
 description: Python Developer passionate about software development and AI
 author: 유지수
-email: jsyoo@example.com
+email: 7slwm7@naver.com
 github_username: master0419
 ```
 
@@ -249,7 +249,7 @@ bundle exec jekyll serve --port 4001
 
 **유지수**
 - GitHub: [@master0419](https://github.com/master0419)
-- Email: jsyoo@example.com
+- Email: 7slwm7@naver.com
 
 ---
 
