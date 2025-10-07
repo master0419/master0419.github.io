@@ -20,8 +20,8 @@ title: Home
     <h1 class="hero-title">유지수</h1>
     <h2 class="hero-subtitle">AI / Data Scientist</h2>
     <p class="hero-description">
-      데이터 속에서 인사이트를 발견하고, AI 기술로 미래를 설계합니다.<br>
-      깊은 바다처럼 끝없는 배움의 여정을 함께하세요.
+      데이터 속에서 인사이트를 발견하고, AI 기술로 고객을 위한 서비스를 설계합니다.<br>
+      깊은 바다처럼 끝없는 배움의 열정으로 성장하겠습니다.
     </p>
 
     <div class="hero-profile-container">
@@ -74,7 +74,7 @@ title: Home
           </p>
           <p>
             끊임없이 배우고 성장하는 것을 즐기며,
-            새로운 기술과 도전을 두려워하지 않습니다.
+            새로운 기술과 도전을 두려워하지 않고 도전하겠습니다.
           </p>
         </div>
       </div>
@@ -86,10 +86,10 @@ title: Home
         </h3>
         <div class="about-section-text">
           <ul class="about-list">
-            <li>학위 및 전공 정보를 입력하세요</li>
-            <li>주요 경력 사항을 입력하세요</li>
-            <li>수상 경력이나 자격증을 입력하세요</li>
-            <li>관련 프로젝트 경험을 입력하세요</li>
+            <li>2020 한국외국어대학교 국제금융학과</li>
+            <li>2022 경희대학교 지속가능 빅데이터 신산업 선도인력 교육연구단</li>
+            <li>2024 경희대학교 빅데이터응용학과 공학(졸)</li>
+            <li>2025 (주)데이터사이언스랩 데이터분석가 직무</li>
           </ul>
         </div>
       </div>
