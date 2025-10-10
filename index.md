@@ -88,7 +88,7 @@ title: Home
           <ul class="about-list">
             <li>2020 한국외국어대학교 국제금융학과</li>
             <li>2022 경희대학교 지속가능 빅데이터 신산업 선도인력 교육연구단</li>
-            <li>2024 경희대학교 빅데이터응용학과 공학(졸)</li>
+            <li>2024 경희대학교 일반대학원 빅데이터응용학과 공학(졸)</li>
             <li>2025 (주)데이터사이언스랩 데이터분석가 직무</li>
           </ul>
         </div>
@@ -103,7 +103,7 @@ title: Home
           <ul class="about-list">
             <li>Machine Learning & Deep Learning</li>
             <li>Natural Language Processing</li>
-            <li>Computer Vision</li>
+            <li>RAG</li>
             <li>Data Analysis & Visualization</li>
             <li>Big Data Processing</li>
           </ul>
