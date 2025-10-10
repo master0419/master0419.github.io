@@ -113,20 +113,24 @@ title: Home
       <div class="about-section">
         <h3 class="about-section-title">
           <span class="about-section-icon">🌟</span>
-          가치관
+          논문 및 수상
         </h3>
         <div class="about-section-text">
           <p>
-            <strong>지속적인 학습:</strong>
-            기술의 빠른 발전에 발맞춰 끊임없이 새로운 것을 배웁니다.
+            <strong>2023</strong>
+            대학(원)생 ERP 아이디어 공모전 1위 대상 수상 (한국경영정보학회)
           </p>
           <p>
-            <strong>실용적 접근:</strong>
-            이론과 실무를 균형있게 적용하여 실질적인 결과를 만듭니다.
+            <strong>2023</strong>
+            빅콘테스트 빅데이터플랫폼 활용분야 1위 최우수상 수상 (과학기술정보통신부)
           </p>
           <p>
-            <strong>협업과 소통:</strong>
-            팀워크를 중시하며 효과적인 커뮤니케이션을 추구합니다.
+            <strong>2023</strong>
+            건강추천시스템(HRS) 연구 동향: 인용네트워크 분석과 GraphSAGE를 활용하여 (지능정보연구 게재)
+          </p>
+          <p>
+            <strong>2024</strong>
+            Leveraging stock discussion room posts for stock price predictions: A focus on the secondary battery sector (IEEE Access 개제)
           </p>
         </div>
       </div>
@@ -205,7 +209,7 @@ title: Home
           <li>Pandas / NumPy</li>
           <li>Spark / PySpark</li>
           <li>Matplotlib / Seaborn</li>
-          <li>Plotly / Tableau</li>
+          <li>Plotly / Pydeck</li>
         </ul>
       </div>
 
@@ -220,7 +224,7 @@ title: Home
           <li>PostgreSQL / MySQL</li>
           <li>MongoDB</li>
           <li>Redis</li>
-          <li>AWS S3 / Azure Blob</li>
+          <li>Chroma / Milvus</li>
         </ul>
       </div>
 
