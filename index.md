@@ -20,7 +20,7 @@ title: Home
     <h1 class="hero-title">유지수</h1>
     <h2 class="hero-subtitle">AI / Data Scientist</h2>
     <p class="hero-description">
-      데이터 속에서 인사이트를 발견하고, AI 기술로 고객을 위한 서비스를 설계합니다.<br>
+      데이터 속에서 인사이트를 발견하고, AI 기술로 고객을 위한 서비스를 설계하고 싶습니다.<br>
       깊은 바다처럼 끝없는 배움의 열정으로 성장하겠습니다.
     </p>
 
@@ -89,7 +89,7 @@ title: Home
             <li>2020 한국외국어대학교 국제금융학과</li>
             <li>2022 경희대학교 지속가능 빅데이터 신산업 선도인력 교육연구단</li>
             <li>2024 경희대학교 일반대학원 빅데이터응용학과 공학(졸)</li>
-            <li>2025 (주)데이터사이언스랩 데이터분석가 직무</li>
+            <li>2025 (주)데이터사이언스랩 AI 데이터분석가 직무</li>
           </ul>
         </div>
       </div>
@@ -191,10 +191,10 @@ title: Home
           머신러닝 및 딥러닝 프레임워크
         </p>
         <ul class="tech-list">
-          <li>TensorFlow / Keras</li>
+          <li>TensorFlow</li>
           <li>PyTorch</li>
           <li>Scikit-learn</li>
-          <li>XGBoost / LightGBM</li>
+          <li>Keras</li>
         </ul>
       </div>
 
@@ -207,9 +207,9 @@ title: Home
         </p>
         <ul class="tech-list">
           <li>Pandas / NumPy</li>
-          <li>Spark / PySpark</li>
           <li>Matplotlib / Seaborn</li>
-          <li>Plotly / Pydeck</li>
+          <li>Plotly</li>
+          <li>Pydeck</li>
         </ul>
       </div>
 
@@ -221,10 +221,10 @@ title: Home
           데이터베이스 관리 및 저장 시스템
         </p>
         <ul class="tech-list">
-          <li>PostgreSQL / MySQL</li>
+          <li>GraphQL / MySQL</li>
           <li>MongoDB</li>
-          <li>Redis</li>
-          <li>Chroma / Milvus</li>
+          <li>Weaviate DB</li>
+          <li>Chroma</li>
         </ul>
       </div>
 
