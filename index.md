@@ -221,8 +221,8 @@ title: Home
           데이터베이스 관리 및 저장 시스템
         </p>
         <ul class="tech-list">
-          <li>GraphQL / MySQL</li>
-          <li>MongoDB</li>
+          <li>GraphQL</li>
+          <li>MySQL</li>
           <li>Weaviate DB</li>
           <li>Chroma</li>
         </ul>
@@ -236,10 +236,10 @@ title: Home
           웹 개발 프레임워크 및 도구
         </p>
         <ul class="tech-list">
-          <li>Django / Flask</li>
+          <li>Django</li>
           <li>FastAPI</li>
           <li>REST API</li>
-          <li>HTML / CSS / JavaScript</li>
+          <li>HTML / JavaScript</li>
         </ul>
       </div>
 
@@ -253,7 +253,7 @@ title: Home
         <ul class="tech-list">
           <li>Docker / Kubernetes</li>
           <li>Git / GitHub</li>
-          <li>CI/CD</li>
+          <li>CI / CD</li>
           <li>AWS</li>
         </ul>
       </div>
