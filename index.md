@@ -238,7 +238,7 @@ title: Home
         <ul class="tech-list">
           <li>Django / Flask</li>
           <li>FastAPI</li>
-          <li>REST API / GraphQL</li>
+          <li>REST API</li>
           <li>HTML / CSS / JavaScript</li>
         </ul>
       </div>
@@ -253,8 +253,8 @@ title: Home
         <ul class="tech-list">
           <li>Docker / Kubernetes</li>
           <li>Git / GitHub</li>
-          <li>CI/CD (Jenkins, GitHub Actions)</li>
-          <li>AWS / Azure / GCP</li>
+          <li>CI/CD</li>
+          <li>AWS</li>
         </ul>
       </div>
     </div>
